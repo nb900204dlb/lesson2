@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background: #f2e;
+		}
+		.box{
+			position: relative;
+			width: 200px;
+			height: 50px;
+			margin:200px auto;
+			font-size: 30px;
+			text-align: center;
+			line-height: 50px;
+			font-weight: bold;
+			font-family: 微软雅黑;
+		}
+		@keyframes move{
+			from{
+				background-position: 0 0;
+			}
+			to{
+				background-position: 200px 0;
+			}
+		}
+		.box .content{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: -webkit-linear-gradient(-45deg,#000 20px,#000 40px,#fff 40px,#fff 60px,#000 60px,#000 80px);
+			-webkit-background-clip:text;
+			color: rgba(0,0,0,0);
+			animation:move 2s linear infinite;
+		}
+	</style>
+	<script src=""></script>
+	<script>
+		
+	</script>
+</head>
+<body>
+	<div class="box">
+		<div class="content">移动滑块解锁</div>
+	</div>
+</body>
+</html>
